@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					
+				</div>
+			</div>
+		</div>
+    	<div class="page-header">
+        	<center><h1><a href="https://www.google.co.id/imgres?imgurl=http://img.solopos.com/thumb/posts/2018/07/11/927248/pepi-tapir.jpg?w%3D600%26h%3D400&imgrefurl=http://entertainment.solopos.com/read/20180711/482/927248/pevita-pearce-bantah-punya-hubungan-spesial-dengan-ariel&h=400&w=600&tbnid=V8AsfSP3accwjM:&q=pevita+pearce&tbnh=133&tbnw=200&usg=AFrqEzcUG3gDc7vXMrgIdnIs7811mr-J6Q&vet=12ahUKEwjRmcyXo6XdAhWIaCsKHeTIBQwQ_B0wEnoECAYQCQ..i&docid=CBn74hnKR2usWM&itg=1&sa=X&ved=2ahUKEwjRmcyXo6XdAhWIaCsKHeTIBQwQ_B0wEnoECAYQCQ">Sechan Pearce</a></h1></center>
+    	</div>
+    	<div class="content container">
+        	<div class="row">
+            	<div class="col-md-8">
+            		{% block content %}
+            		{% endblock %}
+            	</div>
+        	</div>
+    	</div>
+	</body>
+</html>
